@@ -1,5 +1,5 @@
 local function getTypescriptFormater()
-	return { "prettier", stop_after_first = true }
+	return { "prettier" }
 	-- return { "deno_fmt" }
 end
 
