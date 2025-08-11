@@ -10,6 +10,7 @@ vim.lsp.config("ts_ls", {
 vim.lsp.enable("pyright")
 vim.lsp.enable("denols")
 vim.lsp.enable("ts_ls")
+vim.lsp.enable("prismals")
 
 vim.lsp.config("lua_ls", {
 	on_init = function(client)
