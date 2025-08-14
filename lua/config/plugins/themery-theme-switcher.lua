@@ -19,6 +19,7 @@ return {
 			"gruvbox",
 			"vscode",
 			"onedark",
+			"vague",
 		},
 	},
 	keys = {

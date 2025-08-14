@@ -64,6 +64,7 @@ require("lazy").setup({
 		-- require("config.plugins.elixir-tools"),
 		require("config.plugins.blink"),
 		require("config.plugins.autoformat"),
+		require("config.plugins.vague"),
 	},
 	checker = { enabled = true },
 })
