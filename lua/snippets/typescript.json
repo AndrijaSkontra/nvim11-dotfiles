@@ -1,1 +1,1 @@
-{"delete-later":{"body":"let controller: AppController;","prefix":"delete-later"}}
+{"stringifyToLog":{"body":"console.log(JSON.stringify($1, null, 2))","prefix":"stringifyToLog"},"delete-later":{"prefix":"delete-later","body":"let controller: AppController;"}}

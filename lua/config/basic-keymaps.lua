@@ -71,7 +71,7 @@ vim.api.nvim_set_keymap(
 local command_pane_bufnr = nil
 local command_pane_winid = nil
 
-local function run_project_command()
+local function run_project_command(mode)
 	-- first save the file
 	vim.cmd("w")
 	-- Check if .command file exists
@@ -108,10 +108,13 @@ local function run_project_command()
 	end
 
 	-- Create a vertical split
-	vim.cmd("vsplit")
-
-	-- Move to the new split (right window)
-	vim.cmd("wincmd l")
+	if mode == "vertical" then
+		vim.cmd("vsplit")
+		vim.cmd("wincmd l")
+	elseif mode == "horizontal" then
+		vim.cmd("split")
+		vim.cmd("wincmd j")
+	end
 
 	-- Store the window ID before opening terminal
 	command_pane_winid = vim.api.nvim_get_current_win()
@@ -136,7 +139,16 @@ local function run_project_command()
 end
 
 -- Create the keymap
-vim.keymap.set("n", "<leader>!", run_project_command, {
+vim.keymap.set("n", "<leader>!", function()
+	run_project_command("vertical")
+end, {
 	desc = "Toggle command pane from .command file in vertical split",
+	silent = true,
+})
+
+vim.keymap.set("n", "<leader>=", function()
+	run_project_command("horizontal")
+end, {
+	desc = "Toggle command pane from .command file in horizontal split",
 	silent = true,
 })
