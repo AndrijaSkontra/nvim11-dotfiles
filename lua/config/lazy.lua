@@ -65,6 +65,7 @@ require("lazy").setup({
 		require("config.plugins.blink"),
 		require("config.plugins.autoformat"),
 		require("config.plugins.vague"),
+		require("config.plugins.animated-cursor"),
 	},
 	checker = { enabled = true },
 })
