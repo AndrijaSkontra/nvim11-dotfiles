@@ -23,6 +23,6 @@ return {
 		},
 	},
 	keys = {
-		{ "<leader>tt", "<CMD>Themery<CR>", desc = "Change theme" },
+		{ "<leader>th", "<CMD>Themery<CR>", desc = "Change theme" },
 	},
 }

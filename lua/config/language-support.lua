@@ -9,6 +9,11 @@ vim.lsp.config("ts_ls", {
 vim.lsp.config("elixirls", {
 	cmd = { "/usr/local/bin/elixir-ls-v0.29.2/language_server.sh" },
 })
+vim.lsp.config("htmx", {
+	filetypes = {
+		"html",
+	},
+})
 
 vim.lsp.enable("elixirls")
 vim.lsp.enable("pyright")
@@ -16,6 +21,8 @@ vim.lsp.enable("denols")
 vim.lsp.enable("ts_ls")
 vim.lsp.enable("prismals")
 vim.lsp.enable("clangd")
+vim.lsp.enable("html")
+vim.lsp.enable("htmx")
 
 vim.lsp.config("lua_ls", {
 	on_init = function(client)
