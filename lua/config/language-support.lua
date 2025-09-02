@@ -23,6 +23,7 @@ vim.lsp.enable("prismals")
 vim.lsp.enable("clangd")
 vim.lsp.enable("html")
 vim.lsp.enable("htmx")
+vim.lsp.enable("css_variables")
 
 vim.lsp.config("lua_ls", {
 	on_init = function(client)
