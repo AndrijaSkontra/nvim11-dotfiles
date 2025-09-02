@@ -15,7 +15,6 @@ vim.lsp.config("htmx", {
 	},
 })
 
-vim.lsp.enable("elixirls")
 vim.lsp.enable("pyright")
 vim.lsp.enable("denols")
 vim.lsp.enable("ts_ls")
@@ -24,6 +23,7 @@ vim.lsp.enable("clangd")
 vim.lsp.enable("html")
 vim.lsp.enable("htmx")
 vim.lsp.enable("css_variables")
+vim.lsp.enable("expert")
 
 vim.lsp.config("lua_ls", {
 	on_init = function(client)
