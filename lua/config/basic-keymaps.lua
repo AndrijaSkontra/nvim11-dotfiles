@@ -14,14 +14,31 @@ vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j", { desc = "Move focus to the lo
 vim.keymap.set("t", "<C-k>", "<C-\\><C-n><C-w>k", { desc = "Move focus to the upper window" })
 vim.keymap.set("t", "<C-l>", "<C-\\><C-n><C-w>l", { desc = "Move focus to the right window" })
 
-vim.api.nvim_set_keymap("n", "<A-j>", "12jzz", {})
-vim.api.nvim_set_keymap("n", "<A-k>", "12kzz", {})
-vim.api.nvim_set_keymap("v", "<A-j>", "<C-d>zz", {})
-vim.api.nvim_set_keymap("v", "<A-k>", "<C-u>zz", {})
-vim.api.nvim_set_keymap("n", "<A-h>", "_", {})
-vim.api.nvim_set_keymap("n", "<A-l>", "$", {})
-vim.api.nvim_set_keymap("v", "<A-h>", "_", {})
-vim.api.nvim_set_keymap("v", "<A-l>", "$", {})
+-- refactor this into a helper file...
+local function is_macos()
+	return os.getenv("HOME") and os.getenv("HOME"):match("^/Users/") ~= nil
+end
+-- this should check is this a macos device
+if is_macos() then
+	vim.api.nvim_set_keymap("n", "∆", "12jzz", {})
+	vim.api.nvim_set_keymap("n", "˚", "12kzz", {})
+	vim.api.nvim_set_keymap("v", "∆", "<C-d>zz", {})
+	vim.api.nvim_set_keymap("v", "˚", "<C-u>zz", {})
+	vim.api.nvim_set_keymap("n", "˙", "_", {})
+	vim.api.nvim_set_keymap("n", "¬", "$", {})
+	vim.api.nvim_set_keymap("v", "˙", "_", {})
+	vim.api.nvim_set_keymap("v", "¬", "$", {})
+else
+	vim.api.nvim_set_keymap("n", "<A-j>", "12jzz", {})
+	vim.api.nvim_set_keymap("n", "<A-k>", "12kzz", {})
+	vim.api.nvim_set_keymap("v", "<A-j>", "<C-d>zz", {})
+	vim.api.nvim_set_keymap("v", "<A-k>", "<C-u>zz", {})
+	vim.api.nvim_set_keymap("n", "<A-h>", "_", {})
+	vim.api.nvim_set_keymap("n", "<A-l>", "$", {})
+	vim.api.nvim_set_keymap("v", "<A-h>", "_", {})
+	vim.api.nvim_set_keymap("v", "<A-l>", "$", {})
+end
+
 -- Navigation between panes/windows
 
 -- COPY PASTE
