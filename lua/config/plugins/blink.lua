@@ -12,7 +12,7 @@ return {
 		keymap = { preset = "default" },
 
 		appearance = {
-			nerd_font_variant = "mono",
+			nerd_font_variant = "normal",
 		},
 
 		-- (Default) Only show the documentation popup when manually triggered

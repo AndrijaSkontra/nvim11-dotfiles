@@ -6,9 +6,6 @@ vim.lsp.config("ts_ls", {
 	root_markers = { "tsconfig.json", "jsconfig.json", "package.json" },
 	workspace_required = true,
 })
-vim.lsp.config("elixirls", {
-	cmd = { "/usr/local/bin/elixir-ls-v0.29.2/language_server.sh" },
-})
 vim.lsp.config("htmx", {
 	filetypes = {
 		"html",
