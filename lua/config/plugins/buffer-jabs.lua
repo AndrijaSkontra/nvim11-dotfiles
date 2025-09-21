@@ -8,7 +8,7 @@ return {
 		split_filename = true,
 		split_filename_path_width = 20,
 		position = { "center", "top" },
-		width = 55,
+		width = 80,
 		height = 8,
 		border = "rounded",
 		symbols = {

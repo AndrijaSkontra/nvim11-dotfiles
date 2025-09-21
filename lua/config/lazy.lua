@@ -25,7 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		"neovim/nvim-lspconfig",
+		-- "neovim/nvim-lspconfig",
 		-- require("config.plugins.zenmode"),
 		-- require("config.plugins.telescope"),
 		require("config.plugins.treesitter"),
