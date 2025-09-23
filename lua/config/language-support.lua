@@ -21,6 +21,7 @@ vim.lsp.enable("html")
 vim.lsp.enable("htmx")
 vim.lsp.enable("css_variables")
 vim.lsp.enable("expert")
+vim.lsp.enable("tailwindcss")
 
 vim.lsp.config("lua_ls", {
 	on_init = function(client)

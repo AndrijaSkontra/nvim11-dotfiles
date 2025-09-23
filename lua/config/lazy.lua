@@ -25,7 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		-- "neovim/nvim-lspconfig",
+		"neovim/nvim-lspconfig",
 		-- require("config.plugins.zenmode"),
 		-- require("config.plugins.telescope"),
 		require("config.plugins.treesitter"),
@@ -39,7 +39,7 @@ require("lazy").setup({
 		require("config.plugins.todo-comments"),
 		-- require("config.plugins.harpoon"),
 		require("config.plugins.lualine"),
-		require("config.plugins.tailwind"),
+		-- require("config.plugins.tailwind"),
 		require("config.plugins.autoclose-tags"),
 		require("config.plugins.autoclose-brackets"),
 		require("config.plugins.multicursor"),
