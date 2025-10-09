@@ -23,6 +23,7 @@ return {
 			typescript = getTypescriptFormater(),
 			ts = getTypescriptFormater(),
 			tsx = getTypescriptFormater(),
+			handlebars = { "prettier" },
 			-- python = { "ruff" },
 			-- c = { "clang-format" },
 		},

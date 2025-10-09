@@ -6,7 +6,15 @@ return {
 	-- Optional dependencies
 	dependencies = { { "echasnovski/mini.icons", opts = {} } },
 	-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
-	use_default_keymaps = true,
+	use_default_keymaps = false,
+	-- keymaps = {
+	-- 	["g?"] = { "actions.show_help", mode = "n" },
+	-- 	["-"] = { "actions.parent", mode = "n" },
+	-- 	["_"] = { "actions.open_cwd", mode = "n" },
+	-- 	["`"] = { "actions.cd", mode = "n" },
+	-- 	["~"] = { "actions.cd", opts = { scope = "tab" }, mode = "n" },
+	-- 	["g."] = { "actions.toggle_hidden", mode = "n" },
+	-- },
 	-- oil
 	keys = {
 		{ "<leader>e", "<CMD>Oil<CR>", desc = "Open parent directory" },

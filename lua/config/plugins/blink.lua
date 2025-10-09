@@ -24,6 +24,10 @@ return {
 				snippets = {
 					opts = {
 						search_paths = { "~/.config/nvim/lua/snippets" },
+						extended_filetypes = {
+							hbs = { "html" },
+							handlebars = { "html" },
+						},
 					},
 				},
 			},

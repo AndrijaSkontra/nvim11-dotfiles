@@ -66,6 +66,7 @@ require("lazy").setup({
 		require("config.plugins.autoformat"),
 		-- require("config.plugins.vague"),
 		require("config.plugins.animated-cursor"),
+		require("config.plugins.claude-code"),
 		-- require("config.plugins.kulala"),
 	},
 	checker = { enabled = true },

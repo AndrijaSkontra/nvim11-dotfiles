@@ -176,3 +176,8 @@ end, {
 })
 
 vim.keymap.set("n", "<leader>tt", "<CMD>terminal<CR>")
+vim.keymap.set("n", "<leader><leader>", function()
+	if vim.fn.winnr("$") > 1 then
+		vim.cmd("q")
+	end
+end, {})

@@ -63,7 +63,7 @@ return {
 		set("n", "<leader>xx", mc.clearCursors)
 
 		-- Align cursor columns.
-		set("v", "<leader>a", mc.alignCursors)
+		-- set("v", "<leader>a", mc.alignCursors)
 
 		-- Split visual selections by regex.
 		set("v", "S", mc.splitCursors)

@@ -5,6 +5,7 @@ return {
 		themes = {
 			"rose-pine-moon",
 			"rose-pine-main",
+			"rose-pine-dawn",
 			"github_light",
 			"tokyonight",
 			"melange",
